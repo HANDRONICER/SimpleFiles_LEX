@@ -1,0 +1,59 @@
+PROGRAMMING LANGUAGE: BATCH FILES WINDOWS10
+
+//Para no estar todo el dia sentado en el ordenador programando, realize un programa sencillo que me permite monitorear el paso del tiempo que paso sentado frente al PC, para que cada 15 minutos me avise cuando tengo que levantarme de mi silla y estirarme.
+
+USAGE:
+
+_LEX presenta: "administrador de tiempo en PC"
+
+Este programa permite que el usuario perciba el tiempo que pasa en la computadora.
+Para esto, el programa se activa de forma automatica durante el encendido de la pc 
+y trabaja hasta que se apaga el pc o el propio usuario lo desactiva, realizando las siguientes acciones:
+
+//el programa libera memoria RAM y ejecuta optimizaciones de RED en el equipo local usando funcionalidades que Windows10 proporciona de manera nativa.
+// el programa durante toda su ejecución nunca se conecta a internet y tampoco se comunica de ningún modo a una red externa.
+
+Cada 15 minutos:
+1) El programa arroja un mensaje de aviso: 
+"Por favor estirese", el cual desaparece luego de 10 segundos de actividad ó
+hasta que el usuario presiona directamente en la ventana que muestra el mensaje la tecla: "Ok"
+
+***luego de ejecutar el paso 1, inmediatamente ejecuta el paso 2:
+
+2) El programa suspende "solo la pantalla" de la pc ocasionando que la pantalla se apague, NO ENTRA EN MODO DE SUSPENSION DEL PC, solo exclusivamente: "apaga la pantalla".
+(para volver a activar la pantalla solo es necesario mover cursor del mouse ó 
+apretar cualquier tecla del teclado, recomendamos presionar la tecla "Ctrl")
+
+3) En el archivo "Log_LEX.txt" ubicado en la carpeta "Times_LEX" imprime cada 15 minutos el tiempo de uso de la computadora, por lo que es ideal para mantener un registro de encendido y apagado de su PC.
+
+
+----------------INSTALACION DEL PROGRAMA:
+Paso 1: coloque la carpeta: "AlesTimes" (solo es necesario colocarla una vez) 
+directamente en su "escritorio", puede buscar esa ruta copiando y pegando en su explorador de archivos la siguiente ruta:
+C:\Users\%UserProfile%\Desktop
+C:\Users\%UserProfile%\Desktop
+C:\Users\%UserProfile%\Desktop
+
+Paso 2: coloque el archivo: "LEX_Timex.bat" (solo es necesario colocarlo una sola vez) 
+directamente en la siguiente ruta: 
+(copie y pegue la siguiente linea en el buscador de su explorador de archivos):
+C:\Users\%UserProfile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+Paso 3: reinicie su computadora.
+
+-----------------ACTIVACION DEL PROGRAMA:
+Paso 4: 
+a)>>Ejecute su programa: "task manager"
+b)>>Vaya a la pestaña "Startup"
+c)>>Busque "LEXTimex" y de click derecho sobre el nombre
+d)>>En el menu que aparece seleccione "ENABLE" para activar el programa.
+
+-----------------DESACTIVAR EL PROGRAMA:
+*si desea desactivar el programa repita solamente el paso "4:d)" pero
+en lugar de seleccionar la opcion: "ENABLE" seleccione la opcion "DISABLE"*
+
+-----------------DESINSTALAR POR COMPLETO EL PROGRAMA:
+*si desea desinstalar por completo el programa, solo tiene 
+que "desactivar el programa" y proceder reiniciar el PC,
+inmediatamente despues de encender nuevamente el pc, proceder a borrar la carpeta: "Times_LEX" y el archivo: "LEX_Timex.bat" y reiniciar su computadora*
+//Con ello desinstala completamente el programa de su PC.
